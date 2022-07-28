@@ -1,0 +1,124 @@
+/* color */
+
+.green{
+  color: #28a745;
+}
+.blue{
+  color: #0284d0;
+}
+
+/* BOUTON */
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btnp, .bgp{
+  background: #28a745;
+  color: white;
+}
+.btns, .bgs{
+  background: #0284d0;
+  color: white;
+}
+.btnd, .bgd{
+  background: #333;
+  color: white;
+}
+.btnl, .bgl{
+  background: #fff;
+  color: #333;
+}
+.btn-outline{
+  background: transparent;
+  border: white solid 1px;
+}
+.btn:hover{
+  opacity: 0.9;
+}
+
+/* flex-item */
+
+.flex-item{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+.flex-item > div{
+  padding: 20px;
+}
+
+/* flex columns */
+
+.flexcolumns .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flexcolumns .column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.flexcolumns .column .column1, .flexcolumns .column .column2{
+  height: 100%;
+}
+.flexcolumns img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flexcolumns .column2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+.flexcolumns h2{
+  font-size: 40px;
+  font-weight: 100;
+}
+.flexcolumns h4{
+  margin-bottom: 10px;
+}
+.flexcolumns p{
+  margin: 20px 0;
+}
+.fr .row{
+  flex-direction: row-reverse;
+}
+
+/* Cases */
+
+.header{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.header h2{
+  font-size: 40px;
+  margin: 20px 0;
+}
+.spadding{
+  padding: 0 20px 40px 20px;
+}
+.flex-grid .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.flex-grid .column{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}

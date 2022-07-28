@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="Edgeledger.css">
+  <link rel="stylesheet" href="utiles.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+</head>
+<body>
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <span class="green"><i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="Index.html#home">Home</a></li>
+          <li><a href="Index.html#about">About</a></li>
+          <li><a href="Index.html#cases">Cases</a></li>
+          <li><a href="Index.html#blog">Blog</a></li>
+          <li><a href="Index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="home" class="content">
+      <h1>Blog</h1>
+    </div>
+  </header>  
+  <main>
+    <section class="post">
+      <h2>Blog Poste</h2>
+      <p class="meta">
+        <i class="fas fa-user"> </i> Posted by <strong>Jane Doe</strong> | August 8 2019
+      </p>
+      <img src="image/blog/blog1.jpg" alt="blog1">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ducimus quidem nihil autem nam earum obcaecati quia voluptate deserunt veritatis vel aspernatur, consequatur repellat dolorum recusandae officiis neque ea quibusdam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, fuga. Excepturi aliquid quasi explicabo quis. Alias modi ut earum ipsum assumenda nesciunt debitis corporis magni ullam ab nulla, aperiam voluptate pariatur itaque cum eum accusamus quibusdam? Rem architecto, ut voluptatem molestias, quisquam animi praesentium nobis libero dolore cum veniam tempora.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse assumenda repellat cumque provident molestiae totam error? Minus ipsam voluptatibus provident odio et similique a!
+      </p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, beatae dolorem? Nesciunt error nihil, unde aperiam ullam distinctio debitis architecto modi iste quasi, assumenda tempore a recusandae saepe dolorum facilis mollitia optio voluptate cupiditate. Aperiam omnis esse nam quibusdam a vel iste voluptatem ducimus nesciunt aliquam, hic totam quaerat suscipit voluptatum obcaecati atque voluptates illum consequuntur, repellat saepe? Possimus, fuga.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem quia culpa, molestiae facere consectetur commodi consequatur fugiat minima a, ad modi! Voluptate dolorum iste distinctio veritatis, voluptatem unde, id tempore similique explicabo ut velit eaque ullam animi eos sunt itaque molestiae suscipit doloremque! Earum sed porro explicabo sit voluptate.</p>
+    </section>
+  </main>
+
+  <footer class="bgd">
+    <div class="social">
+      <a href="https://fr-ca.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://ca.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - EdgeLedger</p>
+  </footer>
+    <!-- jQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+  
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+  
+      window.onscroll = function(){
+        if(window.pageYOffset>100){
+          navbar.classList.remove('top');
+          if(!scrolled){
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function(){
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        }else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      }
+    </script>
+    
+</body>
+</html>
